@@ -1,5 +1,5 @@
 import unittest
-from unittest.mock import patch, MagicMock, mock_open
+from unittest.mock import patch, MagicMock, mock_open, ANY
 import os
 import sys
 from io import StringIO
@@ -28,7 +28,7 @@ class TestNCIEngineeredReality(unittest.TestCase):
 
         result = nci.fetch_and_clean_url(self.test_url)
         self.assertEqual(result, "Hello\nWorld")
-        mock_get.assert_called_once_with(self.test_url, headers=unittest.mock.ANY, timeout=15)
+        mock_get.assert_called_once_with(self.test_url, headers=ANY, timeout=15)
 
     @patch('NCI_EngineeredReality.requests.get')
     def test_fetch_and_clean_url_failure(self, mock_get):
