@@ -63,3 +63,15 @@ Once the application is running, it will prompt you for input. You can provide o
 *   **To analyze raw text**: Paste the text directly into the terminal. After pasting, press Enter on a new, empty line to submit.
 
 The application will then fetch and analyze the text, showing its progress for each of the 20 criteria. Finally, it will print a detailed report with a total score and breakdown.
+
+## Testing
+
+This project includes a suite of unit tests to ensure the code is working correctly. The tests use Python's built-in `unittest` framework and do not make any real API calls.
+
+To run the tests, navigate to the project directory in your terminal and run the following command:
+
+```bash
+python -m unittest test_NCI_EngineeredReality.py
+```
+
+You should see output indicating that all tests passed successfully.

@@ -1,3 +1,5 @@
+# Joseph Teague, Intro to AI w/ Brian Bird
+
 import requests
 import json
 import time
